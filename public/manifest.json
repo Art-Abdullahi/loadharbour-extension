@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Dispatcher Co-Pilot",
+  "version": "0.1.0",
+  "description": "User-initiated tools for dispatcher workflows on DAT pages.",
+  "action": {
+    "default_title": "Dispatcher Co-Pilot"
+  },
+  "permissions": ["storage", "scripting", "activeTab", "clipboardWrite"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "bg.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "options_page": "options.html",
+  "commands": {
+    "toggle-panel": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+L",
+        "mac": "Command+Shift+L"
+      },
+      "description": "Toggle Dispatcher Co-Pilot drawer"
+    }
+  }
+}
