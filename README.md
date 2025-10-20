@@ -80,6 +80,8 @@ Click the row action (📞 or ✉️) injected by the extension, or press the sh
 
 From the drawer: Compute, Copy, Email, Call, or Send to TMS (single record).
 
+If the page does not visibly mark a selected posting, press the shortcut or icon and then click the desired posting when prompted to enter picker mode.
+
 Keyboard shortcuts
 
 Ctrl/⌘ + Shift + L – open/close the drawer
