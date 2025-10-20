@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.44.1",
-    "@preact/preset-vite": "^4.0.5",
+    "@preact/preset-vite": "^4.1.0",
     "@types/chrome": "^0.0.257",
     "@types/node": "^20.12.7",
     "@typescript-eslint/eslint-plugin": "^7.4.0",
